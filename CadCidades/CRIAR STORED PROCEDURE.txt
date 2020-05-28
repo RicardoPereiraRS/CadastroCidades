@@ -1,0 +1,29 @@
+
+Criar stored procedure que retorna a quantidade decidades por UF.
+
+Para criar o procedure
+
+1- abrir sqlcommand
+2- digitar:
+
+USE cidades
+GO
+
+CREATE
+PROCEDURE buscaCidades
+AS
+SELECT uf,count(*) AS quantidade 
+FROM cidades GROUP BY uf
+
+GO
+
+
+Para testar o procedure digite:
+
+EXECUTE buscacidades
+GO
+
+
+
+
+
